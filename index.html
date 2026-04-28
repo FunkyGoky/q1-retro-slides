@@ -297,6 +297,10 @@
     gap: calc(var(--rhythm) * 4);
     margin: calc(var(--rhythm) * 6) 0 calc(var(--rhythm) * 4);
   }
+  .sticky-row.two-col {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 720px;
+  }
   .sticky {
     position: relative;
     padding: 28px 24px 24px;
@@ -585,7 +589,7 @@
       <ul class="agenda-list">
         <li>
           <span class="num">01</span>
-          <span class="copy">Reflect on Q1 honestly &mdash; the wins, the misses, what customers told us</span>
+          <span class="copy">Reflect on Q1 honestly</span>
           <span class="time">25 min</span>
         </li>
         <li>
@@ -647,7 +651,7 @@
       <div class="eyebrow">Stage 1 &mdash; Gather data</div>
       <h2 class="section-title">Q1 <em>Timeline</em></h2>
       <p class="body-text">Walk the timeline. Add stickies. One thought per sticky. No names &mdash; we focus on the system, not who did it.</p>
-      <div class="sticky-row">
+      <div class="sticky-row two-col">
         <div class="sticky green">
           <div class="label">Went well</div>
           <div class="desc">Wins, momentum, things to keep doing</div>
@@ -655,10 +659,6 @@
         <div class="sticky red">
           <div class="label">Didn't</div>
           <div class="desc">Friction, frustration, things that hurt</div>
-        </div>
-        <div class="sticky blue">
-          <div class="label">Customer / data</div>
-          <div class="desc">EAP feedback, metrics, support signals</div>
         </div>
       </div>
       <div class="timing-strip">
